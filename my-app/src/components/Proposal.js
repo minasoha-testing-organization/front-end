@@ -1,10 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import beforeWedding from "./../data";
 export default function Proposal() {
   return (
     <div>
       <h3>Proposal Pictures</h3>
-      <img src="https://cdn.discordapp.com/attachments/417484256328155144/872346920763400252/IMG_3542.jpg" width="450" height="450"/>
+      {beforeWedding.map((img) => {
+        console.log(img);
+        return <img src={img.img} width="500" height="500" />;
+      })}
     </div>
-  )
+  );
 }
