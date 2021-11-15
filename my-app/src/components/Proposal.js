@@ -14,12 +14,13 @@ export default function Proposal() {
   return (
     <div>
       <h3>Proposal Pictures</h3>
-      <ControlledZoom isZoomed={isZoomed} onZoomChange={handleZoomChange}>
+      {/* <ControlledZoom isZoomed={isZoomed} onZoomChange={handleZoomChange}> */}
         {beforeWedding.map((img) => {
           console.log(img);
           return <img src={img.img} width="500" onLoad={handleImgLoad} />;
         })}
-      </ControlledZoom>
-    </div>
+
+      {/* </ControlledZoom> */}
+         </div>
   );
 }

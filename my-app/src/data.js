@@ -38,5 +38,28 @@ const beforeWedding = [
   {
     img: "https://cdn.discordapp.com/attachments/417484256328155144/905950739677995089/IMG_6099.jpg",
   },
+  {img: "https://i.imgur.com/omNfylG.jpeg"},
+  {img: "https://i.imgur.com/lxXd7Qp.jpeg"},
+  {img: "https://i.imgur.com/7RCSnID.jpeg"},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+  {img: ""},
+
 ];
 export default beforeWedding;
