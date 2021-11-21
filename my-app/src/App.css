@@ -3,5 +3,16 @@
 * {
   text-align: center;
   background-color: rgb(56, 55, 55);
-  font-family: 'Parisienne', cursive;
+  font-family: 'Monsieur La Doulaise', cursive;
 }
+
+.pictures {
+  width: 1000px;
+  display: block;
+  /* display: flex; */
+  justify-content: center;
+ align-items: center;
+}
+/* div {
+  width: 500px;
+} */
