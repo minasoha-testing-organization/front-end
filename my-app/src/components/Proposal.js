@@ -1,24 +1,43 @@
 import * as React from "react";
+import { useState } from "react";
 import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
-export default function MasonryImageList() {
+export default function Proposal() {
+ const [zoom, setzoom] = useState(250);
+ const handleClick = (e) => {
+  e.preventDefault();
+  setzoom(2000);
+  //   if (setzoom(2000)) {
+  //    setzoom(500);
+  //   } else {
+  //    setzoom(2000);
+  //   }
+ };
  return (
-  <Box className="box" sx={{ width: 1750, height: 750, overflowY: "scroll" }}>
-   <ImageList variant="masonry" cols={4} gap={8}>
-    {itemData.map((item) => (
-     <ImageListItem key={item.img}>
-      <img
-       src={`${item.img}?w=248&fit=crop&auto=format`}
-       srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-       alt={item.title}
-       loading="lazy"
-      />
-     </ImageListItem>
-    ))}
-   </ImageList>
-  </Box>
+  <div>
+   {/* <Box className="box" sx={{ width: zoom, height: 450, overflowY: "scroll" }}> */}
+   {/* <ImageList variant="masonry" cols={4} gap={8}> */}
+
+   <h1 className="title">Mario & Noura</h1>
+   {itemData.map((item) => (
+    //   <ImageListItem key={item.img}>
+    <img
+     src={`${item.img}?w=248&fit=crop&auto=format`}
+     srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+     alt={item.title}
+     width={zoom}
+     height={zoom}
+     loading="lazy"
+     className="pictures"
+     onClick={handleClick}
+    />
+    //   </ImageListItem>
+   ))}
+   {/* </ImageList> */}
+   {/* </Box> */}
+  </div>
  );
 }
 

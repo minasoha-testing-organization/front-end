@@ -2,23 +2,42 @@
  text-align: center;
  background-color: rgb(56, 55, 55);
  font-family: "Monsieur La Doulaise", cursive;
+ /* display: flex; */
 }
 
 h1 {
  font-family: "Monsieur La Doulaise", cursive;
- font-weight: 1000;
+ font-weight: 500;
  font-size: 5rem;
  color: white;
+ text-align: left;
 }
-.pic {
- padding: 10px;
+.pictures {
+ width: 250px;
+ height: 250px;
+ border: solid 2px black;
+ /* padding: 15px; */
+ justify-content: space-between;
+}
+.title {
+ background-image: url("https://i.gyazo.com/af9248421f17a71e4f06c02ed8e1db39.jpg");
+ background-position: center;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ height: 800px;
+ /* width: 900px; */
+ align-items: center;
+ justify-content: center;
+ display: flex;
+ /* width: 100%; */
+ margin-left: 0;
 }
 
 .container {
  display: flex;
  justify-content: center;
  align-items: center;
- max-width: 80vw;
+ width: 50px;
  flex-flow: column;
  flex-direction: row;
  flex-wrap: wrap;
@@ -26,4 +45,17 @@ h1 {
 
 .box {
  padding-left: 5vh;
+ align-items: center;
+ justify-content: space-evenly;
+ width: 100%;
+}
+
+@media only screen and (max-width: 375px) {
+ .title {
+  font-size: 2rem;
+  background-image: url("https://i.gyazo.com/9086717f0d4990c5343f09746433ba68.png");
+  background-size: 100% 80%;
+  max-width: auto;
+  max-height: auto;
+ }
 }

@@ -1,12 +1,16 @@
 import "./App.css";
-import MasonryImageList from "./components/Proposal";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import Proposal from "./components/Proposal";
 import Wedding from "./components/Wedding";
 function App() {
  return (
   <div className="App">
-   <h1>Noura & Mario</h1>
-   <MasonryImageList />
-   <Wedding />
+   <div className="buttons">
+    <button>Proposal Pictures</button>
+    <button>Wedding Pictures</button>
+   </div>
+   <Proposal />
+   {/* <Wedding /> */}
   </div>
  );
 }
