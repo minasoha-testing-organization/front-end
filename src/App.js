@@ -1,17 +1,24 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-import Proposal from "./components/Proposal";
-import Wedding from "./components/Wedding";
+import { Switch } from "react-router-dom/cjs/react-router-dom.min";
+import ProposalPage from "./components/Proposal/ProposalPage";
+import Wedding from "./components/Wedding/WeddingPage";
+import { BrowserRouter as Router } from "react-router-dom";
 function App() {
  return (
-  <div className="App">
-   <div className="buttons">
-    <button>Proposal Pictures</button>
-    <button>Wedding Pictures</button>
-   </div>
-   <Proposal />
-   {/* <Wedding /> */}
-  </div>
+  <Router>
+   <Switch>
+    <div className="buttons">
+     <button type="button" to="/proposalPage" class="btn btn-info">
+      Proposal Pictures
+     </button>
+     <button type="button" class="btn btn-info">
+      Wedding Pictures
+     </button>
+     {/* <Route path="/proposalpics" component={ProposalPage} /> */}
+     {/* <Wedding /> */}
+    </div>
+   </Switch>
+  </Router>
  );
 }
 

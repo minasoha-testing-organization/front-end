@@ -13,11 +13,20 @@ h1 {
  text-align: left;
 }
 .pictures {
- width: 250px;
- height: 250px;
  border: solid 2px black;
  /* padding: 15px; */
  justify-content: space-between;
+}
+.zoom {
+ transition: transform 0.3s; /* Animation */
+ margin: 0 auto;
+}
+button {
+ font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+ margin: 10px;
+}
+.zoom:hover {
+ transform: scale(1.5);
 }
 .title {
  background-image: url("https://i.gyazo.com/af9248421f17a71e4f06c02ed8e1db39.jpg");
@@ -25,14 +34,16 @@ h1 {
  background-size: 100% 100%;
  background-repeat: no-repeat;
  height: 800px;
- /* width: 900px; */
  align-items: center;
  justify-content: center;
  display: flex;
- /* width: 100%; */
  margin-left: 0;
+ margin: 10px;
 }
 
+button {
+ justify-content: space-between;
+}
 .container {
  display: flex;
  justify-content: center;

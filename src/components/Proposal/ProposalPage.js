@@ -1,42 +1,30 @@
 import * as React from "react";
 import { useState } from "react";
-import Box from "@mui/material/Box";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
+import { useNavigate } from "react-router-dom";
 
-export default function Proposal() {
- const [zoom, setzoom] = useState(250);
+export default function Proposal(props) {
+ const navigate = useNavigate();
  const handleClick = (e) => {
   e.preventDefault();
-  setzoom(2000);
-  //   if (setzoom(2000)) {
-  //    setzoom(500);
-  //   } else {
-  //    setzoom(2000);
-  //   }
+  navigate(itemData.img);
  };
  return (
   <div>
-   {/* <Box className="box" sx={{ width: zoom, height: 450, overflowY: "scroll" }}> */}
-   {/* <ImageList variant="masonry" cols={4} gap={8}> */}
-
-   <h1 className="title">Mario & Noura</h1>
+   <h1 className="title" onClick={handleClick}>
+    Mario & Noura
+   </h1>
    {itemData.map((item) => (
-    //   <ImageListItem key={item.img}>
     <img
      src={`${item.img}?w=248&fit=crop&auto=format`}
      srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
      alt={item.title}
-     width={zoom}
-     height={zoom}
-     loading="lazy"
-     className="pictures"
+     width="250px"
+     height="250px"
+     className="pictures zoom"
      onClick={handleClick}
+     on
     />
-    //   </ImageListItem>
    ))}
-   {/* </ImageList> */}
-   {/* </Box> */}
   </div>
  );
 }
