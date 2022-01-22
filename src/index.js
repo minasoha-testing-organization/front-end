@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 // Styles
 import "./index.css";
-    
+
 // Render the frontend (in strict mode w/ SPA Routing + Redux)
 ReactDOM.render(
  <React.StrictMode>
@@ -14,5 +14,5 @@ ReactDOM.render(
    <App />
   </Router>
  </React.StrictMode>,
- document.getElementById("root")
+ document.getElementById("root"),
 );

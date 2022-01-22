@@ -1,16 +1,13 @@
 import * as React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function Proposal(props) {
- const navigate = useNavigate();
  const handleClick = (e) => {
   e.preventDefault();
-  navigate(itemData.img);
  };
  return (
   <div>
-   <h1 className="title" onClick={handleClick}>
+   <h1 className='title' onClick={handleClick}>
     Mario & Noura
    </h1>
    {itemData.map((item) => (
@@ -18,9 +15,9 @@ export default function Proposal(props) {
      src={`${item.img}?w=248&fit=crop&auto=format`}
      srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
      alt={item.title}
-     width="250px"
-     height="250px"
-     className="pictures zoom"
+     width='250px'
+     height='250px'
+     className='pictures zoom'
      onClick={handleClick}
      on
     />
