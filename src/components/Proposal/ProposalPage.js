@@ -1,13 +1,13 @@
 import * as React from "react";
-import { useState } from "react";
 
-export default function Proposal(props) {
+
+export default function Proposal() {
  const handleClick = (e) => {
   e.preventDefault();
  };
  return (
   <div>
-   <h1 className='title' onClick={handleClick}>
+   <h1 className='title'> 
     Mario & Noura
    </h1>
    {itemData.map((item) => (
@@ -27,7 +27,7 @@ export default function Proposal(props) {
 }
 
 const itemData = [
- { img: "https://i.imgur.com/omNfylG.jpeg" },
+ { img: "https://i.imgur.com/omNfylG.jpeg", title:"pitcure" },
  { img: "https://i.imgur.com/lxXd7Qp.jpeg" },
  { img: "https://i.imgur.com/7RCSnID.jpeg" },
  { img: "https://i.imgur.com/m70fE0U.jpeg" },
