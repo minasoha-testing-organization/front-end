@@ -1,15 +1,21 @@
-import * as React from "react";
-
+import React, { useEffect } from "react";
+import axios from "axios";
 
 export default function Proposal() {
+ // useEffect(() =>{
+ //     axios.get("link here")
+ //     .then(resp => {
+ //         console.log(resp)
+ //     }).catch(err => {
+ //         console.log(err)
+ //     })
+ // }, [])
  const handleClick = (e) => {
   e.preventDefault();
  };
  return (
   <div>
-   <h1 className='title'> 
-    Mario & Noura
-   </h1>
+   <h1 className='title'>Mario & Noura</h1>
    {itemData.map((item) => (
     <img
      src={`${item.img}?w=248&fit=crop&auto=format`}
@@ -27,7 +33,7 @@ export default function Proposal() {
 }
 
 const itemData = [
- { img: "https://i.imgur.com/omNfylG.jpeg", title:"pitcure" },
+ { img: "https://i.imgur.com/omNfylG.jpeg", title: "pitcure" },
  { img: "https://i.imgur.com/lxXd7Qp.jpeg" },
  { img: "https://i.imgur.com/7RCSnID.jpeg" },
  { img: "https://i.imgur.com/m70fE0U.jpeg" },
