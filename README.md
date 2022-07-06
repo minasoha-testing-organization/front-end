@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Hiring Task - Alice in Wonderland
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This application presents a web-based interface built with [React](https://reactjs.org/) to read _Alice in Wonderland_ by Lewis Carroll, in which the names of characters are equipped with rich tooltips providing information about the characters.
 
-In the project directory, you can run:
+### Implementation Details
 
-### `npm start`
+The application consists of two "services," an API and a UI. The UI is built with React and uses the [MUI](https://mui.com/) component library. The API has access to the full text of _Alice in Wonderland_ and a list of characters.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**implementation details**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Front-End:
 
-### `npm test`
+1. Created CardMaker.js file to create a card with character's name and description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Implemented CharacterCards.js which makes an API call to the backend so it populates the UI with the Character's name and description.
 
-### `npm run build`
+3. Created a toggle button once clicked it will show the Character's name and description in a card. The cards dynamically adjust based on the screen size.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Created TextData.js that would loop over the response from the GET request and displays it in a container.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Added PaginationMaker.js for a better user experiance. Before implemntation the user would have to keep scrolling to read the text. Now the user can flip through the pages of the book.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. Implemented a fix to the ReactDOM.render function because it was no longer supported on React 18.
 
-### `npm run eject`
+Back-End:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Created `/text` route to be able to read the `.txt` file and break it up into arrays which also included spacings then send it back as a json
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Created `/characters` route to send back the characters name and discription as json
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Created middleWare to handle errors
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Method | Endpoint      | Returns                         |
+| ------ | ------------- | ------------------------------- |
+| GET    | `/text`       | `gets all the text `            |
+| GET    | `/characters` | `gets all the characters `      |
+| GET    | `/test`       | `{message: "API is working." }` |
 
-## Learn More
+## Development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Node v18.0.0
+- NPM 8.6.0
 
-### Code Splitting
+[nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) is recommended.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Installing Dependencies
 
-### Analyzing the Bundle Size
+Run `npm i` in the project root to install all necessary dependencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Development Environment
 
-### Making a Progressive Web App
+Executing `npm start` in the project root will invoke [Concurrently](https://github.com/open-cli-tools/concurrently) to spin up both services:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **nodemon** serves the API on port `3030`;
+- **Webpack Dev Server** serves the UI on port `8080`.
 
-### Advanced Configuration
+With the above port configurations, the UI can be accessible in your browser at `http://localhost:8080`, and requests can be made from the UI, to the API, via `http://localhost:3030`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Adding New Dependencies
 
-### Deployment
+This project makes use of [webpack-workspace](https://www.npmjs.com/package/webpack-workspace). To add a dependency for the shell application, run `npm i` from the project root directory. To add an API dependency, run `npm i desired-package -w api`. To add a UI dependency, run `npm i desired-package -w ui`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Production
 
-### `npm run build` fails to minify
+For the purposes of this task assessment, we won't concern ourselves with production details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## References
+
+This is a non-exhaustive list of tools used in this application.
+
+- [Node.js](https://nodejs.org/en/)
+  - [Concurrently](https://github.com/open-cli-tools/concurrently)
+  - [Express](https://expressjs.com/)
+- [React](https://reactjs.org/)
+  - [MUI](https://mui.com/)
+- [Webpack](https://webpack.js.org/)
+  - [webpack-workspace](https://www.npmjs.com/package/webpack-workspace)

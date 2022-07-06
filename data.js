@@ -1,39 +1,5 @@
-import React, { useEffect } from "react";
-import axios from "axios";
-
-export default function Proposal() {
- // useEffect(() =>{
- //     axios.get("link here")
- //     .then(resp => {
- //         console.log(resp)
- //     }).catch(err => {
- //         console.log(err)
- //     })
- // }, [])
- const handleClick = (e) => {
-  e.preventDefault();
- };
- return (
-  <div>
-   <h1 className='title'>Mario & Noura</h1>
-   {itemData.map((item) => (
-    <img
-     src={`${item.img}?w=248&fit=crop&auto=format`}
-     srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-     alt={item.title}
-     width='250px'
-     height='250px'
-     className='pictures zoom'
-     onClick={handleClick}
-     on
-    />
-   ))}
-  </div>
- );
-}
-
-const itemData = [
- { img: "https://i.imgur.com/omNfylG.jpeg", title: "pitcure" },
+const beforeWedding = [
+ { img: "https://i.imgur.com/omNfylG.jpeg" },
  { img: "https://i.imgur.com/lxXd7Qp.jpeg" },
  { img: "https://i.imgur.com/7RCSnID.jpeg" },
  { img: "https://i.imgur.com/m70fE0U.jpeg" },
@@ -91,3 +57,4 @@ const itemData = [
  { img: "https://i.imgur.com/3HeiATA.jpeg" },
  { img: "https://i.imgur.com/Kboyhyv.jpeg" },
 ];
+export default beforeWedding;

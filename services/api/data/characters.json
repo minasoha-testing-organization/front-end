@@ -1,0 +1,106 @@
+[
+  {
+   "name": "Alice",
+   "description": "The heroine and the dreamer of Wonderland; she is the principal character."
+  },
+  {
+    "name": "Alice's Sister",
+    "description": "She reads the book \"without pictures or conversations.\" Alice's boredom with her sister's book leads her to fall asleep and dream her adventures in Wonderland."
+  },
+  {
+    "name": "White Rabbit",
+    "description": "The first creature that Alice sees in Wonderland. He leads Alice down the hole to Wonderland; he mistakes Alice for his servant, Mary Ann, and he orders her to fetch his gloves and fan. He is the Court Herald for the Knave of Hearts' trial."
+  },
+  {
+    "name": "Mouse",
+    "description": "The first creature that Alice sees while she is floating in a pool of her own tears. The Mouse offers to dry all of the creatures by telling them about \"dry\" history. He tells Alice his own sad tale, and it is presented on the page in the shape of a mouse's tail."
+  },
+  {
+    "name": "Duck",
+    "description": "One of the menagerie in the pool of tears. He argues with the Mouse over the meaning of \"it.\""
+  },
+  {
+    "name": "Dodo",
+    "description": "One of the animals in the pool of tears; he proposes the Caucus-race."
+  },
+  {
+    "name": "Lory",
+    "description": "Animal in the pool of tears. He argues with Alice over his authority and refuses to reveal his age."
+  },
+  {
+    "name": "Eaglet",
+    "description": "Animal in the pool of tears."
+  },
+  {
+    "name": "Old Crab",
+    "description": "Animal in the pool of tears."
+  },
+  {
+    "name": "Old Magpie",
+    "description": "Another animal in the pool of tears."
+  },
+  {
+    "name": "Canary",
+    "description": "Animal in the pool of tears. The Canary takes offense at Alice's describing her pet cat Dinah's appetite for birds."
+  },
+  {
+    "name": "Dinah",
+    "description": "Alice's pet cat, who lives above-ground."
+  },
+  {
+    "name": "Pat",
+    "description": "The White Rabbit's servant. He is ordered to evict Alice from the White Rabbit's house, but he gets Bill the Lizard to go into the house instead. Pat speaks with a brogue."
+  },
+  {
+    "name": "Caterpillar",
+    "description": "The water-pipe smoking character whom Alice finds on a mushroom. He is disagreeable and insulting to Alice. But he provides her with knowledge of the growth-altering mushroom."
+  },
+  {
+    "name": "Pigeon",
+    "description": "The pigeon hen attacks Alice because Alice's neck has been distorted by the mushroom into a serpent's shape. The pigeon's mis-identity of Alice is strengthened when she confesses to eating eggs when she was above-ground. The pigeon confuses a part of Alice (Alice's neck and her taste for eggs) for what it considers to be the \"identifying quality\" of a serpent."
+  },
+  {
+    "name": "Fish-Footman",
+    "description": "Servant of the Queen of Hearts who delivers the Queen's invitation (for the croquet party) to the Duchess."
+  },
+  {
+    "name": "Frog-Footman",
+    "description": "Doorman of the Duchess' house. He receives the Queen's croquet party invitation for the Duchess. He banters nonsense — with variations — to Alice."
+  },
+  {
+    "name": "Duchess",
+    "description": "Mad human character of hideous physical aspect and perverse disposition. She abuses the pig/baby and throws it to Alice. Later, she moralizes with Alice at the croquet party. She flees the garden after offending the Queen of Hearts. Earlier, the Duchess was arrested and imprisoned, under an execution sentence, for having boxed the Queen's ears."
+  },
+  {
+    "name": "Cook",
+    "description": "Duchess' cook. She throws pots and plates about, but doesn't hit anyone, although one plate grazes the Frog-Footman's nose. Her indiscriminate shaking of a pepper mill causes everyone in the Duchess' house to sneeze, especially the pig/baby, who screams and cries."
+  },
+  {
+    "name": "Cheshire-Cat",
+    "description": "It first appears in the kitchen with the Duchess, the Cook, and the pig/baby. The Cat is always smiling. After leaving the Duchess' house, Alice finds the Cat on a tree limb. Alice tries to engage him in a serious conversation, but he replies to her in nonsense questions and answers. He vanishes and reappears, and sometimes only his head, or his enigmatic smile, is visible. In the next to the last chapter, he frustrates the Queen and the King of Hearts' order to execute him by making only his head visible — thus, there is no head to cut off. He directs Alice to the March Hare's Mad Tea-Party."
+  },
+  {
+    "name": "March Hare",
+    "description": "Host of the Mad Tea-Party. He and another guest, the Mad Hatter, try to drown the third guest-resident, the Dormouse."
+  },
+  {
+    "name": "The Mad Hatter",
+    "description": "Another guest-resident at the Mad Tea-Party. He explains to Alice why the tea-party is always held at six o'clock and why the time is always six o'clock. The Hatter and a personified Time have had a fight, and Time refuses to let the tea-party end. The Hatter is interrogated by the King at the Knave of Hearts' trial; he and the March Hare dunk the Dormouse in the teapot."
+  },
+  {
+    "name": "Dormouse",
+    "description": "A hibernating guest-resident at the Mad Tea-Party. He tells anecdotes of three sisters who live in a treacle well and draw treacle. He is dunked in the teapot by the Mad Hatter and the March Hare. He is barely able to stay awake, but appears later at the Knave's trial."
+  },
+  {
+    "name": "Queen of Hearts",
+    "description": "The furious queen of the enchanted garden. She is the real power behind Wonderland. Her violent and outrageous temper provokes Alice to overturn Wonderland and return to the world above-ground. The Queen introduces Alice to the Gryphon."
+  },
+  {
+    "name": "Knave of Hearts",
+    "description": "The only \"person\" in Wonderland to evoke Alice's sympathy. He is accused of stealing tarts in the enchanted garden. Alice saves him from the queen's wrath and execution."
+  },
+  {
+    "name": "Mary Ann",
+    "description": "Servant of the White Rabbit."
+  }
+]
